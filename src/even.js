@@ -17,17 +17,14 @@ export const brainEven = () => {
         };
         if (answerYesOrNo === 'yes' && randomNumber % 2 === 1) {
             console.log('"yes" is wrong answer ;(. Correct answer was "no"');
-            console.log('Let`s try again, ' + userName + '!');
-            result = 0;
+            return console.log('Let`s try again, ' + userName + '!');
         };
         if (answerYesOrNo === 'no' && randomNumber % 2 === 0) {
             console.log('"no" is wrong answer ;(. Correct answer was "yes"');
-            console.log('Let`s try again, ' + userName + '!');
-            result = 0;
+            return console.log('Let`s try again, ' + userName + '!');
         };
         if (answerYesOrNo !== 'yes' && answerYesOrNo !== 'no') {
-            console.log('Let`s try again, ' + userName + '!');
-            result = 0;
+            return console.log('Let`s try again, ' + userName + '!');
         };
     };
     console.log('Congratulations, ' + userName + '!');
