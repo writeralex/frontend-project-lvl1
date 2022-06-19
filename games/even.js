@@ -1,7 +1,18 @@
-import { randomNumber } from '../src/random.js';
-import { playerName, game } from '../src/index.js';
+import { randomNumberGenerator } from '../src/random.js';
+import { gameEngine } from '../src/index.js';
+
+const description = 'Answer "yes" if the number is even, otherwise answer "no". ';
+
+const randomNumber = randomNumberGenerator(0, 10);
+const rightAnswer = (question) => (isEven(question) ? 'yes' : 'no');
+const question = randomNumberGenerator(0, 10);
+const gameData = [question, rightAnswer];
 
 export const brainEven = () => {
-    console.log('Answer "yes" if the number is even, otherwise answer "no".');
-    game(randomNumber(1, 100));
+    gameEngine(description, gameData);
+    rightAnswer(randomNumber);
+}
+
+const isEven = (num) => {
+    num % 2 === 0;
 }
