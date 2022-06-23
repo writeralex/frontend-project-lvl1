@@ -1,11 +1,31 @@
-import { randomNumber, randomOperand } from '../src/random.js';
-import { playerName, game } from '../src/index.js';
+import { randomOperations } from '../src/random.js';
+import { gameEngine } from '../src/index.js';
+
+const startBrainCalcGame = () => {
+    gameEngine(description, brainCalc);
+}
+
+const description = 'What is the result of the expression? ';
 
 export const brainCalc = () => {
-    console.log('What is the result of the expression?');
-    let result = randomNumber + randomOperand + randomNumber;
-    toString(randomNumber);
-    toString(randomOperand);
-    let expression = randomNumber + randomOperand + randomNumber;
-    game(expression);
+    const randomOperation = randomOperations();
+    const separator = ' ';
+    const rightAnswerArray = randomOperation.split(separator);
+    const operation = rightAnswerArray[1];
+    const number1 = Number(rightAnswerArray[0]);
+    const number2 = Number(rightAnswerArray[2]);
+    let rightAnswer = 0;
+    if (operation === '*') {
+        rightAnswer = number1 * number2;
+    };
+    if (operation === '+') {
+        rightAnswer = number1 + number2;
+    };
+    if (operation === '-') {
+        rightAnswer = number1 - number2;
+    };
+    toString(rightAnswer);
+    return [randomOperation, rightAnswer];
 }
+
+export default startBrainCalcGame;

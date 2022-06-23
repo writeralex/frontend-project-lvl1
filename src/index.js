@@ -9,10 +9,10 @@ export const gameEngine = (description, brainGame) => {
     const roundsNumber = 3;
 
     for (let i = 0; i < roundsNumber; i += 1) {
-        const [randomNumber, rightAnswer] = brainGame();
-        console.log(`Question: ${randomNumber}`);
+        const [randomNumberOrOperation, rightAnswer] = brainGame();
+        console.log(`Question: ${randomNumberOrOperation}`);
         const answer = readlineSync.question('Your answer: ')
-        if (answer === rightAnswer) {
+        if (answer == rightAnswer) {
             console.log('Correct!');
         }
         else {
