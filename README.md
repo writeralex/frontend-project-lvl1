@@ -1,4 +1,7 @@
+Brain-even asciinema
 [![asciicast](https://asciinema.org/a/bnx34xfXb3DEOICzMjJ0IcZBn.svg)](https://asciinema.org/a/bnx34xfXb3DEOICzMjJ0IcZBn)
+Brain-calc asciinema
+[![asciicast](https://asciinema.org/a/Zd4UqkCvdSCfKNPrOO3S6Cyib.svg)](https://asciinema.org/a/Zd4UqkCvdSCfKNPrOO3S6Cyib)
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/writeralex/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/writeralex/frontend-project-lvl1/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
