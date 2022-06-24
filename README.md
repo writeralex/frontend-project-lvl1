@@ -1,3 +1,5 @@
+Описание проекта:
+
 Brain-even asciinema
 [![asciicast](https://asciinema.org/a/bnx34xfXb3DEOICzMjJ0IcZBn.svg)](https://asciinema.org/a/bnx34xfXb3DEOICzMjJ0IcZBn)
 Brain-calc asciinema
