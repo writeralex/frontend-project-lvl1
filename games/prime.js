@@ -9,17 +9,17 @@ const description = 'Answer "yes" if given number is prime. Otherwise answer "no
 
 export const brainPrime = () => {
     const randomNumber = randomNumberGenerator(1, 10);
-    const rightAnswer = (isPrime(randomNumber) ? 'yes' : 'no');
+    const rightAnswer = isPrime(randomNumber);
     return [randomNumber, rightAnswer];
 }
 
 const isPrime = (randomNumber) => {
     for (let i = 2; i < randomNumber; i += 1) {
         if (randomNumber % i === 0) {
-            return false;
+            return 'no';
         };
-        return true;
-    };
+    }; 
+    return 'yes';
 }
 
 export default startBrainPrimeGame;
