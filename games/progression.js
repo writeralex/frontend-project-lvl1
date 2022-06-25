@@ -20,7 +20,7 @@ export const brainProgression = () => {
 
     let i = randomNumberGenerator(5, lengthOfProgression);
     const rightAnswer = arrayOfProgression[i];
-    arrayOfProgression[i] = '...';
+    arrayOfProgression[i] = '..';
 
     
     return [arrayOfProgression, rightAnswer];
