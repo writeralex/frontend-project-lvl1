@@ -1,13 +1,13 @@
 export const randomNumberGenerator = (min, max) => {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min + 1) + min);
-}
+  const minNumber = Math.ceil(min);
+  const maxNumber = Math.floor(max);
+  return Math.floor(Math.random() * (maxNumber - minNumber + 1) + minNumber);
+};
 
 export const randomOperations = () => {
-    let result = '';
-    const operations = ['+', '-', '*'];
-    let i = randomNumberGenerator(1, 10) % 3;
-    result = `${randomNumberGenerator(1, 10)} ${operations[i]} ${randomNumberGenerator(1, 10)}`;
-    return result;
-}
+  let result = '';
+  const operations = ['+', '-', '*'];
+  const i = randomNumberGenerator(1, 10) % 3;
+  result = `${randomNumberGenerator(1, 10)} ${operations[i]} ${randomNumberGenerator(1, 10)}`;
+  return result;
+};
