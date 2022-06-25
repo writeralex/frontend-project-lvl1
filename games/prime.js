@@ -8,7 +8,7 @@ const startBrainPrimeGame = () => {
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no". ';
 
 export const brainPrime = () => {
-    const randomNumber = randomNumberGenerator(1, 10);
+    const randomNumber = randomNumberGenerator(2, 10);
     const rightAnswer = isPrime(randomNumber);
     return [randomNumber, rightAnswer];
 }
