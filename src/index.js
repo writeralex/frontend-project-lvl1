@@ -17,8 +17,8 @@ export const gameEngine = (description, brainGame) => {
         }
         else {
             console.log(`"${answer}" is wrong answer ;(. Correct answer was "${rightAnswer}".`);
-            return console.log(`Lets try again, ${userName} !`);
+            return console.log(`Lets try again, ${userName}!`);
         };   
     }
-    console.log(`Congratulations, ${userName} !`);
+    console.log(`Congratulations, ${userName}!`);
 }
