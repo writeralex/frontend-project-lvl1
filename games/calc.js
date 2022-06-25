@@ -20,7 +20,7 @@ export const brainCalc = () => {
   if (operation === '-') {
     rightAnswer = number1 - number2;
   }
-  toString(rightAnswer);
+  rightAnswer = String(rightAnswer);
   return [randomOperation, rightAnswer];
 };
 

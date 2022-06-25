@@ -12,7 +12,7 @@ const gameEngine = (description, brainGame) => {
     const [randomNumberOrOperation, rightAnswer] = brainGame();
     console.log(`Question: ${randomNumberOrOperation}`);
     const answer = readlineSync.question('Your answer: ');
-    if (answer == rightAnswer) {
+    if (answer === rightAnswer) {
       console.log('Correct!');
     } else {
       console.log(`"${answer}" is wrong answer ;(. Correct answer was "${rightAnswer}".`);

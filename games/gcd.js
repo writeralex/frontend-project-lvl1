@@ -31,7 +31,8 @@ export const brainGcd = () => {
     }
   }
 
-  const rightAnswer = Math.max(...equalNumbers);
+  let rightAnswer = Math.max(...equalNumbers);
+  rightAnswer = String(rightAnswer);
 
   return [randomTwoNumbers, rightAnswer];
 };
