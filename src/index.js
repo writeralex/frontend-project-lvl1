@@ -19,7 +19,7 @@ const gameEngine = (description, brainGame) => {
       return console.log(`Let's try again, ${userName}!`);
     }
   }
-  console.log(`Congratulations, ${userName}!`);
+  return console.log(`Congratulations, ${userName}!`);
 };
 
 export default gameEngine;
