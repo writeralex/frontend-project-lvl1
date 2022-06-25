@@ -8,8 +8,8 @@ const startBrainGcdGame = () => {
 const description = 'Find the greatest common divisor of given numbers. ';
 
 export const brainGcd = () => {
-    const randomNumber1 = randomNumberGenerator(0, 10);
-    const randomNumber2 = randomNumberGenerator(0, 10);
+    const randomNumber1 = randomNumberGenerator(1, 10);
+    const randomNumber2 = randomNumberGenerator(1, 10);
     const randomTwoNumbers = `${randomNumber1} ${randomNumber2}`;
 
     let arrayOfNumber1 = [];
