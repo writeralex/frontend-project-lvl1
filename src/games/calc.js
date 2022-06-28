@@ -1,5 +1,5 @@
-import { randomOperations } from '../src/random.js';
-import gameEngine from '../src/index.js';
+import { randomOperations } from '../random.js';
+import gameEngine from '../index.js';
 
 const description = 'What is the result of the expression? ';
 
