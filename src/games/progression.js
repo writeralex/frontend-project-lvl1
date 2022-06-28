@@ -1,5 +1,5 @@
 import { randomNumberGenerator } from '../random.js';
-import gameEngine from '../index.js';
+import gameRounds from '../index.js';
 
 const description = 'What number is missing in the progression? ';
 
@@ -25,7 +25,7 @@ export const brainProgression = () => {
 };
 
 const startBrainProgressionGame = () => {
-  gameEngine(description, brainProgression);
+  gameRounds(description, brainProgression);
 };
 
 export default startBrainProgressionGame;

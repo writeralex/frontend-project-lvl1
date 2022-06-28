@@ -1,5 +1,5 @@
 import { randomNumberGenerator } from '../random.js';
-import gameEngine from '../index.js';
+import gameRounds from '../index.js';
 
 const description = 'Answer "yes" if the number is even, otherwise answer "no". ';
 
@@ -17,7 +17,7 @@ export const brainEven = () => {
 };
 
 const startBrainEvenGame = () => {
-  gameEngine(description, brainEven);
+  gameRounds(description, brainEven);
 };
 
 export default startBrainEvenGame;

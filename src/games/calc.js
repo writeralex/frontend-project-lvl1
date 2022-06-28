@@ -1,5 +1,5 @@
 import { randomOperations } from '../random.js';
-import gameEngine from '../index.js';
+import gameRounds from '../index.js';
 
 const description = 'What is the result of the expression? ';
 
@@ -25,7 +25,7 @@ export const brainCalc = () => {
 };
 
 const startBrainCalcGame = () => {
-  gameEngine(description, brainCalc);
+  gameRounds(description, brainCalc);
 };
 
 export default startBrainCalcGame;
