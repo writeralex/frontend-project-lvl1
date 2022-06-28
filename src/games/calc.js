@@ -1,7 +1,15 @@
-import { randomOperations } from '../random.js';
+import randomNumberGenerator from '../random.js';
 import gameRounds from '../index.js';
 
 const description = 'What is the result of the expression? ';
+
+const randomOperations = () => {
+  let result = '';
+  const operations = ['+', '-', '*'];
+  const i = randomNumberGenerator(1, 10) % 3;
+  result = `${randomNumberGenerator(1, 10)} ${operations[i]} ${randomNumberGenerator(1, 10)}`;
+  return result;
+};
 
 export const brainCalc = () => {
   const randomOperation = randomOperations();
