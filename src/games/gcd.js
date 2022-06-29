@@ -20,11 +20,11 @@ const gcdCalculator = (number1, number2) => {
 export const brainGcd = () => {
   const randomNumber1 = randomNumberGenerator(1, 10);
   const randomNumber2 = randomNumberGenerator(1, 10);
-  const randomTwoNumbers = `${randomNumber1} ${randomNumber2}`;
+  const randomNumbers = `${randomNumber1} ${randomNumber2}`;
 
   let rightAnswer = gcdCalculator(randomNumber1, randomNumber2);
   rightAnswer = String(rightAnswer);
-  return [randomTwoNumbers, rightAnswer];
+  return [randomNumbers, rightAnswer];
 };
 
 const startBrainGcdGame = () => {

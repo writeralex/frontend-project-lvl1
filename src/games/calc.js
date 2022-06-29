@@ -3,7 +3,7 @@ import gameRounds from '../index.js';
 
 const description = 'What is the result of the expression? ';
 
-const randomOperations = () => {
+const randomOperationGenerator = () => {
   let result = '';
   const operations = ['+', '-', '*'];
   const i = randomNumberGenerator(1, 10) % 3;
@@ -12,20 +12,20 @@ const randomOperations = () => {
 };
 
 export const brainCalc = () => {
-  const randomOperation = randomOperations();
+  const randomOperation = randomOperationGenerator();
   const separator = ' ';
-  const rightAnswerArray = randomOperation.split(separator);
-  const operation = rightAnswerArray[1];
-  const number1 = Number(rightAnswerArray[0]);
-  const number2 = Number(rightAnswerArray[2]);
+  const operation = randomOperation.split(separator);
+  const operator = operation[1];
+  const number1 = Number(operation[0]);
+  const number2 = Number(operation[2]);
   let rightAnswer = 0;
-  if (operation === '*') {
+  if (operator === '*') {
     rightAnswer = number1 * number2;
   }
-  if (operation === '+') {
+  if (operator === '+') {
     rightAnswer = number1 + number2;
   }
-  if (operation === '-') {
+  if (operator === '-') {
     rightAnswer = number1 - number2;
   }
   rightAnswer = String(rightAnswer);
