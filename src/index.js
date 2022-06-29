@@ -15,10 +15,9 @@ const gameRounds = (description, brainGame) => {
     if (answer !== rightAnswer) {
       console.log(`"${answer}" is wrong answer ;(. Correct answer was "${rightAnswer}".`);
       console.log(`Let's try again, ${userName}!`);
-      break;
+      return;
     } console.log('Correct!');
-    console.log(`Congratulations, ${userName}!`);
-  }
+  } console.log(`Congratulations, ${userName}!`);
 };
 
 export default gameRounds;
