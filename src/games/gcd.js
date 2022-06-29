@@ -1,4 +1,4 @@
-import { randomNumberGenerator } from '../random.js';
+import randomNumberGenerator from '../random.js';
 import gameRounds from '../index.js';
 
 const description = 'Find the greatest common divisor of given numbers. ';
