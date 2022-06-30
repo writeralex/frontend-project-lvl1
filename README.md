@@ -51,4 +51,4 @@ Node.js версии 13 и выше.
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/writeralex/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/writeralex/frontend-project-lvl1/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/e395d5fd7463150ea023/maintainability)](https://codeclimate.com/github/writeralex/frontend-project-lvl1/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage)](https://codeclimate.com/github/codeclimate/codeclimate/test_coverage)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/e395d5fd7463150ea023/test_coverage)](https://codeclimate.com/github/writeralex/frontend-project-lvl1/test_coverage)
