@@ -39,7 +39,7 @@ Node.js версии 13 и выше.
 Удачи!
 
 ### Brain-even asciinema
-[![asciicast](https://asciinema.org/a/bnx34xfXb3DEOICzMjJ0IcZBn.svg)](https://asciinema.org/a/bnx34xfXb3DEOICzMjJ0IcZBn)
+[![asciicast](https://asciinema.org/a/UjnwbT0JhHSLfDvIeA26CXswu.svg)](https://asciinema.org/a/UjnwbT0JhHSLfDvIeA26CXswu)
 ### Brain-calc asciinema
 [![asciicast](https://asciinema.org/a/Zd4UqkCvdSCfKNPrOO3S6Cyib.svg)](https://asciinema.org/a/Zd4UqkCvdSCfKNPrOO3S6Cyib)
 ### Brain-gcd asciinema
