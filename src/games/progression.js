@@ -17,12 +17,12 @@ export const brainProgression = () => {
   const iterationOfProgress = randomNumberGenerator(1, 10);
   const firstElementOfProgress = randomNumberGenerator(1, 10);
 
-  const progression = progressionGen(lengthOfProgress, iterationOfProgress, firstElementOfProgress);
-  let arrayOfProgress = progression;
+  let progression = progressionGen(lengthOfProgress, iterationOfProgress, firstElementOfProgress);
+
   const i = randomNumberGenerator(5, lengthOfProgress);
-  let rightAnswer = arrayOfProgress[i];
-  arrayOfProgress[i] = '..';
-  arrayOfProgress = arrayOfProgress.join(' ');
+  let rightAnswer = progression[i];
+  progression[i] = '..';
+  progression = progression.join(' ');
 
   rightAnswer = String(rightAnswer);
 
