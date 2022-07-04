@@ -3,32 +3,30 @@ import gameRounds from '../index.js';
 
 const description = 'What number is missing in the progression? ';
 
-const arrayOfProgressions = (infoProgression) => {
-  let arrayOfProgression = [infoProgression[2]];
-  const lengthOfProgression = infoProgression[0];
-  const iterationOfProgression = infoProgression[1];
-  for (let i = 0; i < lengthOfProgression; i += 1) {
-    arrayOfProgression.push(arrayOfProgression[i] + iterationOfProgression);
+const progressionGen = (lengthOfProgress, iterationOfProgress, firstElementOfProgress) => {
+  const arrayOfProgress = [];
+  arrayOfProgress.push(firstElementOfProgress);
+  for (let i = 0; i < lengthOfProgress; i += 1) {
+    arrayOfProgress.push(arrayOfProgress[i] + iterationOfProgress);
   }
-
-  const i = randomNumberGenerator(5, lengthOfProgression);
-  let rightAnswer = arrayOfProgression[i];
-  arrayOfProgression[i] = '..';
-  arrayOfProgression = arrayOfProgression.join(' ');
-
-  rightAnswer = String(rightAnswer);
-  return [arrayOfProgression, rightAnswer];
+  return arrayOfProgress;
 };
 
 export const brainProgression = () => {
-  const lengthOfProgression = randomNumberGenerator(5, 10);
-  const iterationOfProgression = randomNumberGenerator(1, 10);
-  const firstElementOfProgression = randomNumberGenerator(1, 10);
-  const infoProgression = [lengthOfProgression, iterationOfProgression, firstElementOfProgression];
+  const lengthOfProgress = randomNumberGenerator(5, 10);
+  const iterationOfProgress = randomNumberGenerator(1, 10);
+  const firstElementOfProgress = randomNumberGenerator(1, 10);
 
-  const brainGameResult = arrayOfProgressions(infoProgression);
+  const progression = progressionGen(lengthOfProgress, iterationOfProgress, firstElementOfProgress);
+  let arrayOfProgress = progression;
+  const i = randomNumberGenerator(5, lengthOfProgress);
+  let rightAnswer = arrayOfProgress[i];
+  arrayOfProgress[i] = '..';
+  arrayOfProgress = arrayOfProgress.join(' ');
 
-  return brainGameResult;
+  rightAnswer = String(rightAnswer);
+
+  return [progression, rightAnswer];
 };
 
 const startBrainProgressionGame = () => {
