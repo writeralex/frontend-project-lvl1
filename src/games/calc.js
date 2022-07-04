@@ -3,22 +3,9 @@ import gameRounds from '../index.js';
 
 const description = 'What is the result of the expression? ';
 
-const randomOperationGenerator = () => {
-  let result = '';
-  const operations = ['+', '-', '*'];
-  const i = randomNumberGenerator(1, 10) % 3;
-  result = `${randomNumberGenerator(1, 10)} ${operations[i]} ${randomNumberGenerator(1, 10)}`;
-  return result;
-};
-
-export const brainCalc = () => {
-  const randomOperation = randomOperationGenerator();
-  const separator = ' ';
-  const operation = randomOperation.split(separator);
-  const operator = operation[1];
-  const number1 = Number(operation[0]);
-  const number2 = Number(operation[2]);
+const calculation = (number1, operator, number2) => {
   let rightAnswer = 0;
+
   if (operator === '*') {
     rightAnswer = number1 * number2;
   }
@@ -29,6 +16,18 @@ export const brainCalc = () => {
     rightAnswer = number1 - number2;
   }
   rightAnswer = String(rightAnswer);
+  return rightAnswer;
+};
+
+export const brainCalc = () => {
+  const operations = ['+', '-', '*'];
+  const number1 = randomNumberGenerator(1, 10);
+  const number2 = randomNumberGenerator(1, 10);
+  const operator = operations[randomNumberGenerator(0, (operations.length - 1))];
+  const randomOperation = `${number1} ${operator} ${number2}`;
+
+  const rightAnswer = calculation(number1, operator, number2);
+
   return [randomOperation, rightAnswer];
 };
 
