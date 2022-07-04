@@ -22,8 +22,7 @@ export const brainGcd = () => {
   const randomNumber2 = randomNumberGenerator(1, 10);
   const randomNumbers = `${randomNumber1} ${randomNumber2}`;
 
-  let rightAnswer = gcdCalculator(randomNumber1, randomNumber2);
-  rightAnswer = String(rightAnswer);
+  const rightAnswer = String(gcdCalculator(randomNumber1, randomNumber2));
   return [randomNumbers, rightAnswer];
 };
 
