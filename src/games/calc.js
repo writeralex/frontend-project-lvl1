@@ -15,7 +15,6 @@ const calculation = (number1, operator, number2) => {
   if (operator === '-') {
     rightAnswer = number1 - number2;
   }
-  rightAnswer = String(rightAnswer);
   return rightAnswer;
 };
 
@@ -26,8 +25,7 @@ export const brainCalc = () => {
   const operator = operations[randomNumberGenerator(0, (operations.length - 1))];
   const randomOperation = `${number1} ${operator} ${number2}`;
 
-  const rightAnswer = calculation(number1, operator, number2);
-
+  const rightAnswer = String(calculation(number1, operator, number2));
   return [randomOperation, rightAnswer];
 };
 
